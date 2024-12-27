@@ -83,6 +83,17 @@ namespace Panuon.WPF.UI
             VisualStateHelper.CornerRadiusProperty.AddOwner(typeof(Timeline));
         #endregion
 
+        #region ShadowColor
+        public Color? ShadowColor
+        {
+            get { return (Color?)GetValue(ShadowColorProperty); }
+            set { SetValue(ShadowColorProperty, value); }
+        }
+
+        public static readonly DependencyProperty ShadowColorProperty =
+            VisualStateHelper.ShadowColorProperty.AddOwner(typeof(Timeline));
+        #endregion
+
         #region Items Properties
 
         #region ItemsWidth
